@@ -1,0 +1,15 @@
+nodeSelector:
+  workload: platform-od
+output:
+  es_host: https://elasticsearch-master:9200
+  es_password: X0X85FfhYRl0IMuI
+  es_username: elastic
+resources:
+  requests:
+    cpu: 1
+    memory: 1Gi
+tolerations:
+- effect: NoSchedule
+  key: workload
+  value: platform-od
+
